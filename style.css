@@ -1,0 +1,180 @@
+table, th, td {
+  			border: 1px solid black;
+		}
+
+.homeBody {
+	background-image: url("https://ak.picdn.net/shutterstock/videos/16615933/thumb/1.jpg");
+	 background-size: cover;
+}
+
+.courseBody {
+	background-color: lightgrey;
+}
+
+h1 {
+	font-family: serif;
+	font-style: italic;
+	color: blue;
+}
+
+a:link {
+  background-color: yellow;
+}
+
+a:visited {
+  background-color: cyan;
+}
+
+a:hover {
+  background-color: lightgreen;
+}
+
+a:active {
+  background-color: hotpink;
+} 
+
+
+.submitBtn:link {
+  background-color: green;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.submitBtn:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.submitBtn:hover {
+  background-color: red;
+}
+
+.submitBtn:active {
+	 background-color: red;
+}
+
+ol {
+  background: #ff9999;
+  padding: 20px;
+}
+
+ul {
+  background: #3399ff;
+  padding: 20px;
+}
+
+ol li {
+  background: #ffe5e5;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+ul li {
+  background: #cce5ff;
+  margin: 5px;
+}
+
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+
+iframe {
+  border: 2px solid red;
+  margin: 25px 50px 75px 100px;
+  background-color: lightblue;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  opacity: 0.5;
+  float:left; 
+  width:300px; 
+  height:300px;
+}
+
+
+table {
+	outline-style: solid;
+}
+
+.heading {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+/*[class|="first"] {
+  background: yellow;
+}
+
+[class|="second"] {
+  background: white;
+}
+
+[class|="third"] {
+  background: yellow;
+}
+
+[class|="fourth"] {
+  background: white;
+}
+
+[class|="fifth"] {
+  background: yellow;
+}
+
+[class|="sixth"] {
+  background: white;
+} */
+
+.second {
+  visibility: hidden;
+}
+
+.course {
+  text-align: left;
+}
+
+.marks {
+  text-align: right;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #111;
+}
+
+.navigate {
+  float: left;
+}
+
+.anchor { 
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.anchor:hover {
+  background-color: #111;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
