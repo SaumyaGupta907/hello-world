@@ -24,25 +24,70 @@
 	  		</tr>
 	  		<tr class="second">
 	    		<td class="course">Probabilty and Statistic</td>
-	    		<td class="marks">97/100</td>
+	    		<td class="marks">97</td>
 	  		</tr>
 	  		<tr class="third">
 	    		<td class="course">Digital Logic and Design</td>
-	    		<td class="marks">96/100</td>
+	    		<td class="marks">96</td>
 	  		</tr>
 	  		<tr class="fourth">
 	    		<td class="course">Data Structures</td>
-	    		<td class="marks">88/100</td>
+	    		<td class="marks">88</td>
 	  		</tr>
 	  		<tr class="fifth">
 	   			<td class="course">Mathematical Foundation of CS</td>
-	   			<td class="marks">90/100</td>
+	   			<td class="marks">90</td>
 	  		</tr>
 	  		<tr class="sixth">
 	  			<td class="course">Electronis Devices and Circuits</td>
-	   			<td class="marks">78/100</td>
+	   			<td class="marks">78</td>
 	  		</tr>
-		</table>
-	</div>
+	  		<tr class="seventh">
+	  			<td id="total"></td>
+	  			<td id="avg"></td>
+	  		</tr>	
+		</table><br>
+		<p>8 power 2 is:</p>
+		<p id="power">u</p>
+		<p>Square root of 64 is:</p>
+		<p id="root"></p>
+		<p>Absolute value of -4.4 is:</p>
+		<p id="absolute"></p>
+		<p>Generating a random number:</p>
+		<p id="random"></p>
+	</div><br><br>
+	<a href="javascript.html">Javascript</a>
+	<script type="text/javascript">
+
+		function Total(a,b,c,d,e) {
+			var f= a+b+c+d+e;
+  			return "Total= "+f;
+	}
+		function Avg(a,b,c,d,e) {
+			var f= (97+96+88+90+78)/5;
+			return "Average= "+f;
+		}
+		document.getElementById("total").innerHTML = Total(97,96,88,90,78);
+		document.getElementById("avg").innerHTML = Avg(97,96,88,90,78);
+		document.getElementById("power").innerHTML = Math.pow(8,2);
+		document.getElementById("root").innerHTML = Math.sqrt(64);
+		document.getElementById("absolute").innerHTML = Math.abs(-4.4);
+		var a=Math.random()
+		document.getElementById("random").innerHTML = 
+		"<p>Random number= "+ a + "</p>" +
+		"<p>Ceil= "+ Math.ceil(a) + "</p>" +
+		"<p>Floor= "+ Math.floor(a) + "</p>" +
+		"<p>Sine= "+ Math.sin((0*a)/180) + "</p>" +
+		"<p>Cosine= "+ Math.cos((0*a)/180) + "</p>";
+
+/*		"<p><b>Math.E:</b> " + Math.E + "</p>" +
+"<p><b>Math.PI:</b> " + Math.PI + "</p>" +
+"<p><b>Math.SQRT2:</b> " + Math.SQRT2 + "</p>" +
+"<p><b>Math.SQRT1_2:</b> " + Math.SQRT1_2 + "</p>" +
+"<p><b>Math.LN2:</b> " + Math.LN2 + "</p>" +
+"<p><b>Math.LN10:</b> " + Math.LN10 + "</p>" +
+"<p><b>Math.LOG2E:</b> " + Math.LOG2E + "</p>" +
+"<p><b>Math.Log10E:</b> " + Math.LOG10E + "</p>"; */
+	</script>
 </body>
 </html>
