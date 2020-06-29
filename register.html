@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<form action="display.html" method="get">
+	<form name="myForm" action="display.html" method="post" onsubmit="return validateForm()">
 	  	<label for="name"><strong>Name:</strong></label><br>
 	  	<input type="text" id="name" name="name" pattern="[a-z]+" required><br><br>
 
@@ -35,6 +35,15 @@
   		<label for="eee"> Electrical and Electronics Engineering</label><br>
   		<input type="checkbox" id="mech" name="mech" value="mech">
   		<label for="mech"> Mechanical Engineering</label></div><br><br>
+
+  		<script type="text/javascript">
+			function validateForm() {
+  				var x = document.forms["myForm"]["checkbox-group"].value;
+  				if (x == "") {
+    				alert("Name must be filled out");
+  	  				return false;
+  			}
+  		</script>
 
 		<input type="submit">
 	</form> 
