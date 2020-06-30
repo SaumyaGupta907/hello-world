@@ -3,6 +3,51 @@
 <head>
 	<title>Javascript</title>
 	<h1>Javascript</h1>
+		<script type="text/javascript">
+		var a=5;
+		var b=10;
+		var array=[1,2,3,4,5];
+		console.log(a,b);
+		var index_3= String(array[2]);
+		console.log(typeof(index_3));
+		function fn1() {
+			var myDate= document.getElementById("Date1").value;
+			alert("Date is: " +myDate);
+		}
+		function controlFlow(){
+			var num= prompt("Please enter a number");
+			if (10<num && num<100){
+				  document.getElementById("demo1").innerHTML= "The number lies in between 10 and 100";
+			} else{
+				 document.getElementById("demo1").innerHTML= "The number does not lie in between 10 and 100";
+			}
+		}
+		function switchCase(){
+			var num= prompt("Enter a number");
+			switch (ch){
+				case num>10 && num<50:
+				document.getElementById("demo1").innerHTML= "The number lies in between 10 and 50";
+				break;
+				case num< 100 && num>49:
+				document.getElementById("demo2").innerHTML= "The number lies in between 50 and 100";
+			}
+		}
+			try {
+  				function fibonacci() {
+  					var num=document.getElementById("demo3").value
+    				if (num <= 1) {
+    					return 1;
+    				}
+  				  		return fibonacci(num - 1) + fibonacci(num - 2);
+			}
+			}
+			catch(err) {
+				  document.getElementById("demo4").innerHTML = err.message;
+			}
+			finally{
+				document.getElementById("demo4").innerHTML = "Finally block ";
+			}
+</script>
 </head>
 <body>
 	<ul>
@@ -16,13 +61,18 @@
 			 </ol>
 		</li>
 	</ul>
-	<script type="text/javascript">
-		var a=5;
-		var b=10;
-		var array=[1,2,3,4,5];
-		console.log(a,b);
-		var index_3= String(array[2]);
-		console.log(typeof(index_3));
-	</script>
+  		<label for="Date1">Select date:</label>
+  		<input type="date" id="Date1" name="Date1"><br>
+  		<button onclick="fn1()" id="btn1">Click</button><br><br>
+  		<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+  		<p id="demo"></p>
+  		<button onclick="controlFlow()">Check numbers from 10-100</button>
+  		<p id="demo1"></p>
+  		 <button onclick="switchCase()">Check numbers from 10-100</button>
+  		<p id="demo2"></p>
+  		<input type="number" id="demo3">
+  		<button onclick="fibonacci()">Check fibonacci</button>
+  		<p id="demo4"></p>
+
 </body>
 </html>
