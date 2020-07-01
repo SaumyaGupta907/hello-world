@@ -11,7 +11,32 @@ table, th, td {
 	background-color: lightgrey;
 }
 
-h1 {
+iframe {
+  border: 2px solid red;
+  margin: 25px 50px 75px 100px;
+  background-color: lightblue;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  opacity: 0.5;
+  float:left; 
+  width:300px; 
+  height:300px;
+}
+
+.container {
+  border: 1px solid lightgrey;
+  padding: 20px;
+  width: 40%;
+  margin-top: 40px;
+  padding-left: 5px;
+}
+
+.submitBtn {
+  margin-left: 10px;
+}
+
+/*h1 {
 	font-family: serif;
 	font-style: italic;
 	color: blue;
@@ -90,20 +115,6 @@ ol {
   list-style-type: upper-roman;
 }
 
-iframe {
-  border: 2px solid red;
-  margin: 25px 50px 75px 100px;
-  background-color: lightblue;
-  position: relative;
-  left: 0px;
-  top: 0px;
-  opacity: 0.5;
-  float:left; 
-  width:300px; 
-  height:300px;
-}
-
-
 table {
 	outline-style: solid;
 }
@@ -137,7 +148,7 @@ table {
 
 [class|="sixth"] {
   background: white;
-} */
+} 
 
 .second {
   visibility: hidden;
@@ -178,5 +189,5 @@ table {
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-
+*/
 
